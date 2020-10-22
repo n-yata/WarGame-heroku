@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>War Game</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="resources/js/index.js"></script>
+    <link rel="stylesheet" href="resources/css/style.css" />
+</head>
+<body>
+    <div id="dataLoad">
+        <p>前回中断したデータをロードしますか？</p>
+        <p>
+            <input type="radio" name="fileLoad" value="yes" checked="checked">はい（中断データをロード）
+            <input type="radio" name="fileLoad" value="no">いいえ（最初からはじめる）
+        </p>
+        <p>
+            <input type="button" id="submitDataLoad" value="決定">
+        </p>
+    </div>
+
+    <div id="info"></div>
+    <br/>
+
+    <div id="compareResult"></div>
+
+    <div id="suspendResult">
+        <div id="suspendResultVal"></div>
+        <br/>
+        <a href="">最初からやり直す</a>
+    </div>
+
+    <div id="chooseDraw">
+        <p>札を切りますか？</p>
+        <p>
+            <input type="radio" name="drawOrSuspend" value="draw" checked="checked">札を切る
+            <input type="radio" name="drawOrSuspend" value="suspend">中断
+        </p>
+        <p>
+            <input type="button" id="submitDraw" value="決定">
+        </p>
+    </div>
+
+    <div id="finalResult">
+        <p>### 最終結果 ###</p>
+        <div id="finalResultVal"></div>
+        <br/>
+        <p>### これまでの対戦成績 ###</p>
+        <div id="cumlateResultVal"></div>
+        <br/>
+        <a href="">最初からやり直す</a>
+    </div>
+
+</body>
+</html>
